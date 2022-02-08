@@ -4,7 +4,7 @@ Project was made in order to track cosmetic-product expenses
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Data Visualization](#data visualization)
+* [Data Visualization](#data-visualization)
 
 ## General info
 This project is supposed to allow user to track their spendings.
