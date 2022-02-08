@@ -1,2 +1,2 @@
 # personal-finance-tracker
-project to track cosmetic products expenses
+project to track cosmetic-product expenses
