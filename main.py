@@ -17,7 +17,9 @@ categories = ['gift','face care','additional care','everyday care','make-up']
 plt.figure(figsize=(10,6))
 plt.title('Product prices')
 sns.scatterplot(data=dataset, x='date', y='price')  #,hue='category')
-#sns.regplot(x=dataset.date, y=dataset.price)
+plt.xlabel('Date of purchase')
+plt.ylabel('Price of product [zł]')
+
 #plt.show()
 
 print(dataset['date'].unique())
@@ -33,6 +35,8 @@ print(month_price)
 
 plt.figure('Overall spendings')
 sns.lineplot(x=unique_dates , y=month_price)
+plt.xlabel('Date of purchase')
+plt.ylabel('Expences [zł]')
 plt.show()
 
 category_price=np.zeros(len(categories))
@@ -45,4 +49,10 @@ for i,data in enumerate(categories):
 plt.figure(figsize=(10,6))
 plt.title('Categories')
 sns.barplot(x=categories, y=category_price)
+plt.xlabel('Category')
+plt.ylabel('Spendings')
 plt.show()
+
+
+
+
