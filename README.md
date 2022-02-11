@@ -1,5 +1,5 @@
 # personal-finance-tracker
-Project was made in order to track cosmetic-product expenses
+Project was made in order to track cosmetic-product expenses and to predict future spendings with **linear regression model**.
 
 ## Table of contents
 * [General info](#general-info)
@@ -33,21 +33,23 @@ The most money I spent on additional care, which is a part that can be restraine
 
 ## Money spending prediction
 
-To predict future expenses linear regression machine learning algorithm was used. 
+To predict future expenses **linear regression** machine learning algorithm was used. 
 In order to use the dataset it had to be prepared.
 
 Head of data:
-         date                                   name  ... category  price
-0  30.11.2020  Bielenda Proffesional Power of Nature  ...     gift  35.99
-1  30.11.2020                      Eveline Cosmetics  ...     gift   6.99
-2  30.11.2020                      Dermika Nasycenie  ...     gift   5.99
-3  30.11.2020                   La Petit Marseillais  ...     gift   8.99
-4  30.11.2020          Allvernum Cedarwood & Vetiver  ...     gift  39.99
+|  | date | name | ... | category | price |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 30.11.2020 |  Bielenda Proffesional Power of Nature | ... |    gift | 35.99 |
+| 1 | 30.11.2020 |                     Eveline Cosmetics | ... |    gift | 6.99 |
+| 2 | 30.11.2020 |                     Dermika Nasycenie | ... |    gift |  5.99 |
+| 3 | 30.11.2020 |                  La Petit Marseillais | ... |    gift |  8.99 |
+| 4 | 30.11.2020 |         Allvernum Cedarwood & Vetiver | ... |    gift | 39.99 |
 
 Description of data numeric columns:
 [5 rows x 5 columns]
-       count       mean       std   min   25%   50%    75%    max
-price   67.0  11.400448  7.988422  1.59  6.69  9.99  14.39  43.99
+| | count | mean | std | min | 25%  | 50%  |  75%  |  max  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|price  | 67.0 | 11.400448 | 7.988422 | 1.59 | 6.69 | 9.99 | 14.39 | 43.99 |
 
 It was decided that name of the product and its specyfic use would be useless information for the prediction so that the columns name and product were droped.
 
